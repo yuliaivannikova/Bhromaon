@@ -1,0 +1,78 @@
+.test {
+    padding-top: 119px;
+    padding-bottom: 194px;
+    background-position: top;
+    background-size: cover;
+    background-image: url(../img/img7.png);
+
+    &__title {
+        font-family: 'Aleo';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-bottom: 102px;
+        text-align: center;
+
+    }
+
+    &__name {
+        color: #fefefe;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-bottom: 16px;
+    }
+
+    &__text {
+        font-weight: 300;
+        line-height: 26px;
+        color: #e8e8e8;
+        font-size: 16px;
+        text-indent: 29px;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+
+    &__icon {
+        color: #5474fd;
+        font-size: 19px;
+    }
+
+    &__quote {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__desc {
+        padding-top: 48px;
+        padding-left: 44px;
+        padding-right: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        &__desc {
+            padding-left: 15px;
+        }
+
+        &__img {
+            max-width: 70%;
+        }
+    }
+
+
+    @media screen and (max-width: 575px) {
+        & {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        &__title {
+            padding-bottom: 50px;
+            font-size: 28px;
+        }
+
+    }
+
+
+}

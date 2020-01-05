@@ -1,0 +1,64 @@
+.review {
+
+    &__sectionOne,
+    &__sectionTwo {
+        padding-top: 230px;
+        padding-bottom: 100px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    &__sectionOne {
+        background-image: url(../img/img5.png);
+
+    }
+
+    &__sectionTwo {
+        background-image: url(../img/img6.png);
+        padding-bottom: 104px;
+    }
+
+    &__title {
+        color: #e8e8e8;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 26px;
+        padding-bottom: 25px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: -0.6px;
+        padding-bottom: 17px;
+
+    }
+
+    &__text {
+        color: #e8e8e8;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: -0.6px;
+        padding-bottom: 41px;
+
+    }
+
+    &__block {
+        padding: 45px 30px 50px 30px;
+        background-color: rgba(35, 35, 35, 0.9);
+    }
+
+    @media screen and (max-width: 575px) {
+
+        &__sectionOne,
+        &__sectionTwo {
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+        }
+    }
+
+}

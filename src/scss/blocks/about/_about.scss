@@ -1,0 +1,77 @@
+.about {
+    padding-top: 120px;
+    padding-bottom: 117px;
+    background-image: url(../img/img4.png);
+    background-position: top;
+    background-size: cover;
+
+    &__title {
+        font-family: 'Aleo';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 1;
+        padding-bottom: 59px;
+    }
+
+    &__text {
+        color: #e8e8e8;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-bottom: 26px;
+        letter-spacing: 0.6px;
+
+        &:nth-child(3) {
+            padding-bottom: 42px;
+        }
+    }
+
+    &__plate {
+        padding-top: 80px;
+    }
+
+    &__img {
+        padding-left: 33px;
+
+        &-second {
+            padding-left: 63px;
+        }
+    }
+
+
+    @media screen and (max-width: 991px) {
+
+        &__img-second {
+            padding-left: 33px;
+        }
+
+        &__plate {
+            padding-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        &__img,
+        &__img-second {
+            padding-left: 15px;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        &__plate {
+            padding-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+
+        & {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+
+}

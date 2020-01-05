@@ -1,0 +1,247 @@
+.way {
+    height: 338px;
+    padding-top: 94px;
+    padding-bottom: 118px;
+    background-color: #333;
+
+    &__icon1 {
+        width: 81px;
+        height: 71px;
+        fill: #5474fd;
+
+    }
+
+    &__icon2 {
+        width: 74px;
+        height: 72px;
+        fill: #ff6363;
+
+
+    }
+
+    &__icon3 {
+        width: 73px;
+        height: 71px;
+        fill: #00a2ff;
+
+
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #e8e8e8;
+        font-family: 'Aleo';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-top: 21px;
+    }
+
+    @media screen and (max-width: 991px) {
+        & {
+            height: 252px;
+            padding-top: 58px;
+            padding-bottom: 70px;
+        }
+
+        &__title {
+            font-size: 27px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        &__icon1,
+        &__icon2,
+        &__icon3 {
+            width: 68px;
+            height: 68px;
+        }
+
+        &__title {
+            font-size: 19px;
+        }
+
+    }
+
+    @media screen and (max-width: 575px) {
+
+        &__icon1,
+        &__icon2,
+        &__icon3 {
+            width: 42px;
+            height: 42px;
+        }
+
+        &__title {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        & {
+            height: 192px;
+            padding-top: 35px;
+            padding-bottom: 55px;
+        }
+
+    }
+
+}
+
+.col-4:nth-child(2) .way__section {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        border-top: 2px solid rgba(255, 255, 255, 0.507);
+        border-top-style: dotted;
+        top: -50px;
+        left: -236px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        border-top: 2px solid rgba(255, 255, 255, 0.507);
+        border-top-style: dotted;
+        top: -50px;
+        left: 150px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 1199px) {
+        &:before {
+            width: 230px;
+            height: 594px;
+            border-radius: 0;
+            top: 30px;
+            left: -161px;
+        }
+
+        &:after {
+            width: 251px;
+            height: 450px;
+            border-radius: 0;
+            top: 30px;
+            left: 174px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &:after {
+            width: 230px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &:after {
+            width: 200px;
+            left: 100px;
+        }
+
+        &:before {
+            width: 200px;
+            left: -99px;
+        }
+
+    }
+
+    @media screen and (max-width: 575px) {
+        &:after {
+            width: 0;
+            height: 0;
+        }
+
+        &:before {
+            width: 0;
+            height: 0;
+        }
+
+    }
+}
+
+.col-4:nth-child(1) .way__section .way__icon {
+    position: relative;
+    z-index: 3;
+
+    &::after {
+        content: '';
+        width: 79px;
+        height: 83px;
+        top: 6px;
+        left: 14px;
+        background-color: #333;
+        position: absolute;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 575px) {
+        &:after {
+            width: 0;
+            height: 0;
+        }
+
+    }
+}
+
+.col-4:nth-child(2) .way__section .way__icon {
+    position: relative;
+    z-index: 3;
+
+    &::before {
+        content: '';
+        width: 111px;
+        height: 83px;
+        top: 6px;
+        left: -8px;
+        background-color: #333;
+        position: absolute;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 575px) {
+
+        &:before {
+            width: 0;
+            height: 0;
+        }
+
+    }
+}
+
+.col-4:nth-child(3) .way__section .way__icon {
+    position: relative;
+    z-index: 3;
+
+    &::before {
+        content: '';
+        width: 111px;
+        height: 83px;
+        top: 6px;
+        left: -8px;
+        background-color: #333;
+        position: absolute;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 575px) {
+        &:before {
+            width: 0;
+            height: 0;
+        }
+
+    }
+}

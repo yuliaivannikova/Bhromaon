@@ -1,0 +1,33 @@
+include ./blocks/header/_header.pug
+include ./blocks/about/_about.pug
+include ./blocks/nav/_nav.pug
+include ./blocks/way/_way.pug
+include ./blocks/review/_review.pug
+include ./blocks/test/_test.pug
+include ./blocks/footer/_footer.pug
+
+
+
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Bhromaon
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        +nav(class="d-block d-md-none")
+        +header
+        +nav(class="d-none d-md-block")
+        +about
+        +way
+        +review
+        +test
+        +footer
+        
+        script(src="https://kit.fontawesome.com/0b79355df0.js" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+        script(src="./js/svgxuse.min.js")   
+        script(src="./js/script.js")             

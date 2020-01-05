@@ -1,0 +1,47 @@
+.footer {
+    padding-top: 118px;
+    padding-bottom: 50px;
+    background-color: #232323;
+
+    &__logo {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        padding-bottom: 8px;
+        display: block;
+
+        &:hover {
+            color: #002A66;
+        }
+    }
+
+
+    &__slogan {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-bottom: 23px;
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link:hover {
+        color: #002A66;
+    }
+
+    @media screen and (max-width: 575px) {
+        & {
+            padding-top: 50px;
+        }
+
+    }
+}

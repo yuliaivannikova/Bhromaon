@@ -1,0 +1,33 @@
+mixin nav
+    .nav(class!=attributes.class)
+        .nav__wrapper
+            .container
+                .row
+                    .col-4.col-lg-6
+                        a.nav__logo bhromaon
+                    .col-8.col-lg-6
+                        .nav__section.d-none.d-md-block   
+                            ul.nav__list
+                                li.nav__item
+                                    a.nav__link(href="#about") who we are
+                                li.nav__item
+                                    a.nav__link(href="#review") what we do
+                                li.nav__item
+                                    a.nav__link(href="#test") travel with us
+                                li.nav__item
+                                    a.nav__link(href="#footer") contact us
+                        .nav__bar.d-md-none
+                            .nav__burger
+                                span
+                                span
+                                span 
+        ul.nav__barlist
+            a.nav__close(href="#close") &times;
+            li.nav__item
+                a.nav__barlink(href="#about") who we are
+            li.nav__item
+                a.nav__barlink(href="#projects") what we do
+            li.nav__item
+                a.nav__barlink(href="#test") travel with us
+            li.nav__item
+                a.nav__barlink(href="#footer") contact us 

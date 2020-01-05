@@ -1,0 +1,18 @@
+mixin header
+    .header
+        .container
+            a.header__logo
+                h1 Bhromaon
+            .header__text
+                h2 Safe Travel Anywhere
+            .row    
+                .col-12.offset-sm-1.col-sm-10.offset-lg-2.col-lg-8
+                    form.header__form(action="", method="get")
+                        input.header__input(type="search", name="search", placeholder="Search Your Travel Destination")
+                        button.header__button(type="submit")
+                            p.header__button-text search
+                            svg.header__icon
+                                use(xlink:href="./img/icons/icons.svg#icon1")
+            .header__scroll
+                p.header__scroll-text Scroll Down
+                i.header__scroll-icon.fas.fa-chevron-down
